@@ -58,7 +58,8 @@ ldconfig /usr/local/lib/
 mkdir -p /opt
 cd /opt
 rm -rf /opt/hpfeeds
-git clone https://github.com/threatstream/hpfeeds
+git clone https://github.com/Cymmetria/hpfeeds.git
+git checkout feature/mazerunner_geoloc_processor
 chmod 755 -R hpfeeds
 cd hpfeeds
 $VIRTUALENV -p $PYTHON env
