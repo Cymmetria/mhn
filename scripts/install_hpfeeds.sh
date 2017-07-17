@@ -59,7 +59,9 @@ mkdir -p /opt
 cd /opt
 rm -rf /opt/hpfeeds
 git clone https://github.com/Cymmetria/hpfeeds.git
+cd hpfeeds
 git checkout feature/mazerunner_geoloc_processor
+cd ../
 chmod 755 -R hpfeeds
 cd hpfeeds
 $VIRTUALENV -p $PYTHON env
